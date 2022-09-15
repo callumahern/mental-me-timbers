@@ -2,7 +2,7 @@
   <h3>What have you done today?</h3>
 
 
-  <%= month_calendar do |date| %>
+  <%= month_calendar(events: @entry) do |date| %>
     <%= date.day %>
   <% end %>
 </div>
