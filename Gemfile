@@ -5,6 +5,7 @@ ruby "2.7.4"
 
 gem "rails", "~> 7.0.4"
 gem 'bootstrap', '~> 5.2.0'
+gem "simple_calendar", "~> 2.4"
 
 gem "sprockets-rails"
 gem "sqlite3", "~> 1.4"
