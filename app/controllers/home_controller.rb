@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
 
-  def homepage; end
+  def homepage 
+    @entry = Entry.new
+  end
 
   def about; end
 end
