@@ -1,8 +1,19 @@
+<div class='container mt-3'><%= link_to 'New Entry', new_entry_path %></div>
+
 <div class="container mt-5 text-center">
   <h3>What have you done today?</h3>
 
 
-  <%= month_calendar(events: @entry) do |date| %>
-    <%= date.day %>
-  <% end %>
+  <%= month_calendar(events: @entry) do |date, entries| %>
+    <div class="day">
+      <%= date.day %>
+    </div>
+    <% entries.each do |entry| %>
+      <div class="card-header">
+        <div class="card-title">
+          <%= entry.title %>
+        </div>
+      </div>
+    <% end %>
+  <% end%>
 </div>
