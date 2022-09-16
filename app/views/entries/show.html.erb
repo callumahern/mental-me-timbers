@@ -1,11 +1,13 @@
-<p style="color: green"><%= notice %></p>
+<div class="container mt-5">
+  <p style="color: green"><%= notice %></p>
 
-<%= render @entry %>
+  <%= render @entry %>
 
-<div>
-  <%= link_to "Edit this entry", edit_entry_path(@entry) %> |
-  <%= link_to "Back to entries", entries_path %> |
-  <%= link_to "Home", root_path %>
+  <div>
+    <%= link_to "Edit this entry", edit_entry_path(@entry) %> |
+    <%= link_to "Back to entries", entries_path %> |
+    <%= link_to "Home", root_path %>
 
-  <%= button_to "Destroy this entry", @entry, method: :delete %>
+    <%= button_to "Destroy this entry", @entry, method: :delete %>
+  </div>
 </div>

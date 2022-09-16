@@ -11,7 +11,7 @@
     <% entries.each do |entry| %>
       <div class="card-header">
         <div class="card-title">
-          <%= entry.title %>
+          <%= link_to entry.title, entry %>
         </div>
       </div>
     <% end %>
