@@ -17,3 +17,9 @@
 
 
  @import "bootstrap";
+
+
+.smallme {
+  width: 300px;
+  position: absolute;
+}
