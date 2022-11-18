@@ -14,21 +14,16 @@
   <h3>What have you done today?</h3>
 
 
-  <%= month_calendar(events: @entry) do |date, entries| %>
+  <%= month_calendar(events: @entries, attribute: :entry_date) do |date, foods| %>
     <div class="day">
       <%= date.day %>
     </div>
-    <% entries.each do |entry| %>
+    <% foods.each do |food| %>
         <div class="card-header">
           <div class="card-title">
-            <%= link_to entry.title, entry %>
+            <%= food.food %>
           </div>
         </div>
     <% end %>
-    <% @food.each do |f| %>
-      <div class="card-title">
-        <%= f.food %>
-      </div>
-    <% end%>
   <% end%>
 </div>
