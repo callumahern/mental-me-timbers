@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_18_153602) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_21_092010) do
   create_table "entries", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -21,7 +21,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_18_153602) do
   end
 
   create_table "finances", force: :cascade do |t|
-    t.string "item"
+    t.string "title"
     t.integer "cost"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -29,7 +29,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_18_153602) do
   end
 
   create_table "foods", force: :cascade do |t|
-    t.string "food"
+    t.string "title"
     t.boolean "healthy"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -44,7 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_18_153602) do
   end
 
   create_table "moods", force: :cascade do |t|
-    t.string "check_in"
+    t.string "title"
     t.datetime "entry_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
